@@ -71,7 +71,7 @@ type creationFunc = (app: IApp) => Promise<void>;
     CreationComponent,
   },
 })
-export default class HomeView extends Vue {
+class HomeView extends Vue {
   pages = Object.freeze({
     list: 1,
     creation: 2,
@@ -390,6 +390,8 @@ export default class HomeView extends Vue {
     }
   }
 }
+
+export default HomeView;
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

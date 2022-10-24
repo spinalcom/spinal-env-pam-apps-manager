@@ -153,7 +153,7 @@ import { Component, Prop, Vue, Watch } from "vue-property-decorator";
     },
   },
 })
-export default class AppList extends Vue {
+class AppList extends Vue {
   @Prop() category!: { name: string; id: string };
   @Prop() apps!: IApp[];
 
@@ -218,6 +218,8 @@ export default class AppList extends Vue {
     return "Liste d'" + this.category.name.toLowerCase();
   }
 }
+
+export default AppList;
 </script>
   
   <style lang="scss">

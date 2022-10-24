@@ -137,7 +137,7 @@ import { Component, Prop, Vue, Watch } from "vue-property-decorator";
 import icons from "../store/icons";
 
 @Component({})
-export default class CreationComponent extends Vue {
+class CreationComponent extends Vue {
   required = [(v: string) => !!v || "this input is required"];
   icons: { id: string; name: string }[] = icons;
 
@@ -201,6 +201,8 @@ export default class CreationComponent extends Vue {
     this.initAppInfo();
   }
 }
+
+export default CreationComponent;
 </script>
   
   <!-- Add "scoped" attribute to limit CSS to this component only -->

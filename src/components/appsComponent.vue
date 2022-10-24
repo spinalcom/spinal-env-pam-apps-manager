@@ -53,7 +53,7 @@ import Select from "../components/select.vue";
     Select,
   },
 })
-export default class HomeView extends Vue {
+class HomeView extends Vue {
   @Prop() categorySelected!: { name: string; id: string };
   @Prop() apps!: IApp[];
 
@@ -77,6 +77,8 @@ export default class HomeView extends Vue {
     this.$emit("delete", app);
   }
 }
+
+export default HomeView;
 </script>
   
   <!-- Add "scoped" attribute to limit CSS to this component only -->
