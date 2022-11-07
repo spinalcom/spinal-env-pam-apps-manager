@@ -51,6 +51,7 @@ with this file. If not, see
                         v-model="appInfo.icon"
                         label="Icone"
                         item-value="name"
+                        item-text="name"
                         outlined>
 
               <template v-slot:item="{ item }">
@@ -77,7 +78,7 @@ with this file. If not, see
         </v-row>
 
         <v-text-field v-model="appInfo.packageName"
-                      label="Nom du package"
+                      label="Nom du package (dans le package.json)"
                       outlined></v-text-field>
 
         <v-combobox small-chips
@@ -233,6 +234,7 @@ $toolbar-height: 70px;
     width: 50%;
     height: calc(100% - 40px);
     padding: 10px;
+    margin: auto;
     ._title {
       text-align: center;
       font-size: 2em;
